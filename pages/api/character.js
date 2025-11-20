@@ -1,4 +1,7 @@
 function character(request, response) {
+  // add cache
+  response.setHeader("Cache-Control", "s-maxage=10, stale-while-revalidate");
+
   response.status(200).json({
     characters: [
       // Main Piston Cup racers
