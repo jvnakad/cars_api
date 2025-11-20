@@ -1,8 +1,6 @@
-function tempo(request, response) {
-  const dynamicDate = new Date();
-
+function character(request, response) {
   response.json({
-    date: dynamicDate.toGMTString(),
+    name: "mcqueen",
   });
 }
 
