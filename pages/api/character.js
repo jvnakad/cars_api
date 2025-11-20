@@ -1,7 +1,5 @@
 function character(request, response) {
-  response.json({
-    name: "mcqueen",
-  });
+  response.status(200).json({ chave: "valor" });
 }
 
 export default character;
