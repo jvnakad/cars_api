@@ -1,21 +1,21 @@
 function character(request, response) {
-  // add cache
   response.setHeader("Cache-Control", "s-maxage=10, stale-while-revalidate");
-
   response.status(200).json({
     characters: [
-      // Main Piston Cup racers
       {
+        id: 1,
         name: "Lightning McQueen",
         number: 95,
         color: "red",
         type: "race car",
-        model: "Chevrolet Corvette-inspired",
+        model: "Chevrolet Corvette‑inspired",
         league: "Piston Cup",
         hometown: "Radiator Springs",
         sponsor: "Rust-eze",
+        raceHistory: { wins: 93, podiums: 120, pistonCup: 7 },
       },
       {
+        id: 2,
         name: "Chick Hicks",
         number: 86,
         color: "green",
@@ -24,8 +24,10 @@ function character(request, response) {
         league: "Piston Cup",
         hometown: "Unknown",
         sponsor: "Various",
+        raceHistory: { wins: 45, podiums: 60, pistonCup: 1 },
       },
       {
+        id: 3,
         name: "Strip The King Weathers",
         number: 43,
         color: "blue",
@@ -34,10 +36,10 @@ function character(request, response) {
         league: "Piston Cup",
         hometown: "Unknown",
         sponsor: "Dinoco",
+        raceHistory: { wins: 120, podiums: 140, pistonCup: 7 },
       },
-
-      // Radiator Springs residents
       {
+        id: 4,
         name: "Mater",
         type: "tow truck",
         color: "rusty brown",
@@ -45,8 +47,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 5,
         name: "Sally Carrera",
         type: "sports car",
         color: "blue",
@@ -54,8 +58,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 6,
         name: "Doc Hudson",
         number: 51,
         type: "classic race car",
@@ -64,17 +70,21 @@ function character(request, response) {
         league: "Piston Cup (former)",
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 78, podiums: 100, pistonCup: 3 },
       },
       {
+        id: 7,
         name: "Ramone",
         type: "lowrider",
-        color: "varies (different paint jobs)",
+        color: "varies",
         model: "Chevrolet Impala 1959",
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 8,
         name: "Flo",
         type: "classic car",
         color: "aqua green",
@@ -82,8 +92,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 9,
         name: "Luigi",
         type: "compact car",
         color: "yellow",
@@ -91,8 +103,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 10,
         name: "Guido",
         type: "forklift",
         color: "blue",
@@ -100,8 +114,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 11,
         name: "Sheriff",
         type: "police car",
         color: "black and white",
@@ -109,8 +125,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 12,
         name: "Fillmore",
         type: "hippie van",
         color: "orange and green",
@@ -118,8 +136,10 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 13,
         name: "Sarge",
         type: "military jeep",
         color: "army green",
@@ -127,15 +147,30 @@ function character(request, response) {
         league: null,
         hometown: "Radiator Springs",
         sponsor: null,
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
       },
       {
+        id: 14,
         name: "Mack",
         type: "truck",
         color: "red",
-        model: "Mack Super-Liner",
+        model: "Mack Super‑Liner",
         league: null,
         hometown: "Unknown",
         sponsor: "Rust-eze",
+        raceHistory: { wins: 0, podiums: 0, pistonCup: 0 },
+      },
+      {
+        id: 15,
+        name: "Jackson Storm",
+        number: 20,
+        color: "black and blue",
+        type: "race car",
+        model: "Next-Gen Racer",
+        league: "Piston Cup",
+        hometown: "Unknown",
+        sponsor: "Ignitr",
+        raceHistory: { wins: 50, podiums: 60, pistonCup: 1 },
       },
     ],
   });
